@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Monstr</title>
-    <script src='js/index.js'></script>
-    <!-- <script src='js/demo.js'></script> -->
-  </head>
-  <body>
-    <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
-    <div id='monster-container'></div>
-    <button id="back"><=</button>
-    <button id="forward">=></button>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Monstr</title>
+  <script src='js/index.js'></script>
+  <!-- <script src='js/demo.js'></script> -->
+</head>
+<body>
+  <h1>Monstr Inc.</h1>
+  <div id='create-monster'>
+    <h2>Create Monster</h2>
+    <form id="create-monster-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required>
+      <br>
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required>
+      <br>
+      <button type="submit">Create Monster</button>
+    </form>
+  </div>
+  <div id='monster-container'></div>
+  <button id="back"><=</button>
+  <button id="forward">=></button>
+</body>
 </html>
